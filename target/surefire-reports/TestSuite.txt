@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.59 s <<< FAILURE! -- in TestSuite
-framedesign.tests.submitOrderTest.OrderHistoryTest -- Time elapsed: 1.241 s <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because "<parameter1>" is null
-	at framedesign.pageobjects.OrdersPage.lambda$0(OrdersPage.java:44)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.66 s <<< FAILURE! -- in TestSuite
+framedesign.tests.submitOrderTest.OrderHistoryTest -- Time elapsed: 1.381 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because "orderNumber" is null
+	at framedesign.pageobjects.OrdersPage.lambda$getOrderID$0(OrdersPage.java:44)
 	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)

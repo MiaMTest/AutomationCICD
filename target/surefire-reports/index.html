@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\JavaProject\QAAutomationRahulShetty\seleniumframeworkdesign\testSuites\testng.xml</span>
+                    <span>E:\JavaProject\cicd\seleniumframeworkdesign\testSuites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -132,12 +132,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="framedesign.tests.submitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})">submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="framedesign.tests.submitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})">submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="framedesign.tests.submitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})">submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="framedesign.tests.submitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})">submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -163,8 +163,8 @@
                   <a name="OrderHistoryTest">
                   </a> <!-- OrderHistoryTest -->
                   <span class="method-name">OrderHistoryTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replace(java.lang.CharSequence, java.lang.CharSequence)&quot; because &quot;&lt;parameter1&gt;&quot; is null
-	at framedesign.pageobjects.OrdersPage.lambda$0(OrdersPage.java:44)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replace(java.lang.CharSequence, java.lang.CharSequence)&quot; because &quot;orderNumber&quot; is null
+	at framedesign.pageobjects.OrdersPage.lambda$getOrderID$0(OrdersPage.java:44)
 	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
@@ -196,18 +196,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})">
-                  </a> <!-- submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL}) -->
-                  <span class="method-name">submitOrder</span>
-                  <span class="parameters">({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})">
                   </a> <!-- submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3}) -->
                   <span class="method-name">submitOrder</span>
                   <span class="parameters">({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})">
+                  </a> <!-- submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,7 +244,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\JavaProject\QAAutomationRahulShetty\seleniumframeworkdesign\testSuites\testng.xml</span>
+            <span class="header-content">E:\JavaProject\cicd\seleniumframeworkdesign\testSuites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -332,32 +332,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'framedesign.tests.submitOrderTest')
-data.setCell(0, 3, 8347);
+data.setCell(0, 3, 3745);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrder')
 data.setCell(1, 2, 'framedesign.tests.submitOrderTest')
-data.setCell(1, 3, 4502);
+data.setCell(1, 3, 3620);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'OrderHistoryTest')
-data.setCell(2, 2, 'framedesign.tests.submitOrderTest')
-data.setCell(2, 3, 1183);
+data.setCell(2, 1, 'invalidUserNameTest')
+data.setCell(2, 2, 'framedesign.tests.LoginErrorValidationTest')
+data.setCell(2, 3, 1146);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidUserNameTest')
-data.setCell(3, 2, 'framedesign.tests.LoginErrorValidationTest')
-data.setCell(3, 3, 1116);
+data.setCell(3, 1, 'OrderHistoryTest')
+data.setCell(3, 2, 'framedesign.tests.submitOrderTest')
+data.setCell(3, 3, 1122);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'invalidPasswordTest')
 data.setCell(4, 2, 'framedesign.tests.LoginErrorValidationTest')
-data.setCell(4, 3, 668);
+data.setCell(4, 3, 775);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'emptyUserEmailPassword')
 data.setCell(5, 2, 'framedesign.tests.LoginErrorValidationTest')
-data.setCell(5, 3, 299);
+data.setCell(5, 3, 428);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -400,85 +400,91 @@ return data;
               <div class="chronological-class-name">framedesign.tests.submitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">lanchApplication</span>
-                <span class="method-start">276 ms</span>
+                <span class="method-start">241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrder({password=1mail@example.COM, email=Amail@example.com, productName=ZARA COAT 3})</span>
-                <span class="method-start">2663 ms</span>
+                <span class="method-start">4880 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framedesign.tests.LoginErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">emptyUserEmailPassword</span>
-                <span class="method-start">5195 ms</span>
+                <span class="method-start">4890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5498 ms</span>
+                <span class="method-start">5322 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">lanchApplication</span>
-                <span class="method-start">5716 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidPasswordTest</span>
-                <span class="method-start">9781 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">10449 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">lanchApplication</span>
-                <span class="method-start">10657 ms</span>
+                <span class="method-start">5508 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framedesign.tests.submitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11011 ms</span>
+                <span class="method-start">8625 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">lanchApplication</span>
-                <span class="method-start">11339 ms</span>
+                <span class="method-start">8802 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framedesign.tests.LoginErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordTest</span>
+                <span class="method-start">10587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">lanchApplication</span>
+                <span class="method-start">11514 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framedesign.tests.submitOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">submitOrder({password=Mia12345!, email=mia@hotmail.com, productName=ADIDAS ORIGINAL})</span>
-                <span class="method-start">15530 ms</span>
+                <span class="method-start">13625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framedesign.tests.LoginErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">invalidUserNameTest</span>
-                <span class="method-start">15699 ms</span>
+                <span class="method-start">15358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16816 ms</span>
+                <span class="method-start">16505 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framedesign.tests.submitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20032 ms</span>
+                <span class="method-start">17245 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">lanchApplication</span>
-                <span class="method-start">20255 ms</span>
+                <span class="method-start">17431 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">OrderHistoryTest</span>
-                <span class="method-start">24190 ms</span>
+                <span class="method-start">21341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25431 ms</span>
+                <span class="method-start">22723 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
