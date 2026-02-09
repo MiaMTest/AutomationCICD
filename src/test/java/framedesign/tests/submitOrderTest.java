@@ -48,7 +48,7 @@ public class submitOrderTest extends BaseTest {
 		OrderConfirmationPage orderConfirmPage = checkoutPage.submitOrder();
 
 		Assert.assertTrue(orderConfirmPage.getOrderMsg().equalsIgnoreCase("Thankyou for the order."));
-		//String orderNumber = orderConfirmPage.getOrderNb();
+		orderNumber = orderConfirmPage.getOrderNb();
 
 	}
 
