@@ -68,17 +68,21 @@ public class submitOrderTest extends BaseTest {
 		Assert.assertEquals(ordersPage.verifyOrderDeleted(), "Orders Deleted Successfully");
 
 	}
-	
 
 
-	@DataProvider
-	public Object[][] getData() throws IOException {
 
-		List<HashMap<String, String>> data = convertJsonDataToMap(
-				System.getProperty("user.dir") + "\\src\\test\\java\\framedesign\\data\\purchaseOrder.json");
+    @DataProvider(name="getData")
+    public Object[][] getData() throws IOException {
+        DataReader reader = new DataReader();
 
-		return new Object[][] { { data.get(0) }, { data.get(1) } };
-	}
+        List<HashMap<String, String>> data = reader.convertJsonDataToMap("purchaseOrder.json");
+        Object[][] results = new Object[data.size()][1];
+        for (int i=0;i<data.size();i++) {
+            results[i][0]=data.get(i);
+        }
+        return results;
+
+    }
 
 	// create HashMap object with data type argument Object (could instore any value
 	// type)

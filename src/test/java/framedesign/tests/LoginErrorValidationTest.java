@@ -51,4 +51,27 @@ public class LoginErrorValidationTest extends BaseTest {
 		Assert.assertEquals(landingPage.getInvalidPswd(), "*Password is required");
 		
 	}
+
+    @Test(dataProvider = "getData")
+    public void register(HashMap<String, String> input) throws InterruptedException {
+        LandingPage landingPage = new LandingPage(driver);
+
+        landingPage.register();
+        RegisterationPage registerationPage = new RegisterationPage(driver);
+        registerationPage.completeRegistration(input.get("firstName"), input.get("lastName"), input.get("email"),
+                input.get("phone"), input.get("occupation"), input.get("gender"), input.get("regisPassword"),
+                input.get("confirmRegisPassword"));
+    }
+
+    @DataProvider(name="getData")
+    public Object[][] getData() throws IOException {
+        DataReader reader = new DataReader();
+        List<HashMap<String, String>> data = reader.convertJsonDataToMap("registeration.json");
+
+        Object[][] results = new Object[data.size()][1];
+        for (int i = 0; i < data.size(); i++) {
+            results[i][0] = data.get(i);
+        }
+        return results;
+    }
 }

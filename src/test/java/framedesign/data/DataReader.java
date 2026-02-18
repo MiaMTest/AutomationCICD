@@ -13,19 +13,19 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DataReader {
 	//method to scan Json file and convert to HashMap
-	public List<HashMap<String, String>> convertJsonDataToMap() throws IOException {
-		//read Json to String by using FileUtils class
-		String jsonContent = FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\src\\test\\java\\framedesign\\data\\purchaseOrder.json"), StandardCharsets.UTF_8);
-		
-		//String to Map, import Jackson Databind Library dependency
-		//using ObjectMapper class for converting between Java Objects and JSON data
-		
-		ObjectMapper mapper = new ObjectMapper();
-		//readValue from String content to HashMap with TypeReference <...>(){}
-		List<HashMap<String,String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String,String>>>(){});
-		return data;//{{map},{map1}}
-		
-		
-	}
+    public List<HashMap<String, String>> convertJsonDataToMap(String fileName) throws IOException {
+        String dataDir = System.getProperty("user.dir") + "\\src\\test\\java\\framedesign\\data\\";
+        //read Json to String by using FileUtils class
+        File file = new File(dataDir+fileName);
+
+        String jsonContent = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
+
+        //String to Map, import Jackson Databind Library dependency
+        //using ObjectMapper class for converting between Java Objects and JSON data
+        ObjectMapper mapper = new ObjectMapper();
+        //readValue from String content to HashMap with TypeReference <...>(){}
+        List<HashMap<String,String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String,String>>>(){});
+        return data;//{{map},{map1}}
+    }
 
 }
